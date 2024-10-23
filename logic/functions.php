@@ -34,7 +34,7 @@ function generateHeader($title, $stylesheets = [])
 // Function to generate the navigation
 function generateNavagation()
 {
-    echo '
+  echo '
     <nav class="navbar navbar-expand-lg navbar-dark position-relative">
         <div class="container">
             <!-- Logo and Brand -->
@@ -70,13 +70,11 @@ function generateNavagation()
     ';
 }
 
-
-
 // Function to generate a footer
 function generateFooter()
 {
   echo '
-<footer class="bg-dark text-light py-4">
+  <footer class="bg-dark text-light py-4">
   <div class="container text-center">
     <p>&copy; 2024 The Reload Food Truck. All Rights Reserved.</p>
     <div>
@@ -85,7 +83,7 @@ function generateFooter()
     </div>
     <p>Visit us at <a href="https://range-time.com">Range Time</a>, where great food meets Freedom.</p>
   </div>
-</footer>
+  </footer>
 
   <!-- Add the Bootstrap JS file -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -96,4 +94,3 @@ function generateFooter()
   </html>
   ';
 }
-?>
