@@ -1,3 +1,10 @@
+<!--
+Name: Kyle Stranick
+Date: 10/25/2024
+Assignment: Project 2
+ITN 264-201
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 

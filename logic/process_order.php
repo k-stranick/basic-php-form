@@ -1,25 +1,32 @@
+<!--
+Name: Kyle Stranick
+Date: 10/25/2024
+Assignment: Project 2
+ITN 264-201
+-->
+
 <?php
 session_start(); // Start session to hold form data
 
 // If the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
-    $firstName = htmlspecialchars(trim($_POST['firstName']));
-    $lastName = htmlspecialchars(trim($_POST['lastName']));
-    $street = htmlspecialchars(trim($_POST['street']));
-    $apt = htmlspecialchars(trim($_POST['apt']));
-    $city = htmlspecialchars(trim($_POST['city']));
-    $state = htmlspecialchars(trim($_POST['state']));
-    $zip = htmlspecialchars(trim($_POST['zip']));
-    $phone = htmlspecialchars(trim($_POST['phone']));
-    $quantity = htmlspecialchars(trim($_POST['quantity']));
+    $firstName = htmlspecialchars(trim($_POST['firstName'] ?? ''));
+    $lastName = htmlspecialchars(trim($_POST['lastName'] ?? ''));
+    $street = htmlspecialchars(trim($_POST['street'] ?? ''));
+    $apt = htmlspecialchars(trim($_POST['apt'] ?? ''));
+    $city = htmlspecialchars(trim($_POST['city'] ?? ''));
+    $state = htmlspecialchars(trim($_POST['state'] ?? ''));
+    $zip = htmlspecialchars(trim($_POST['zip'] ?? ''));
+    $phone = htmlspecialchars(trim($_POST['phone'] ?? ''));
+    $quantity = htmlspecialchars(trim($_POST['quantity'] ?? ''));
     $pizzaSize = htmlspecialchars(trim($_POST['pizzaSize'] ?? ''));
-    $crustType = htmlspecialchars(trim($_POST['crustType']));
+    $crustType = htmlspecialchars(trim($_POST['crustType'] ?? ''));
     $toppings = []; // Initialize an empty array for toppings
-    
+
     // Handle toppings (as an array)
     $toppings = isset($_POST['toppings']) ? $_POST['toppings'] : [];
-  
+
     // Error checking
     $errors = [];
 
@@ -74,4 +81,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 }
-?>
