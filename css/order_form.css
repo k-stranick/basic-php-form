@@ -1,0 +1,36 @@
+.size-label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.size-radio {
+    display: none;
+}
+
+.size-circle {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #efefef;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.size-radio:checked + .size-circle {
+    background-color: red;
+    color: white;
+}
+
+.bordered-section {
+    border: 2px solid #ff6347; /* Tomato red */
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff3e0; /* Light background */
+    margin-bottom: 20px;
+
+}

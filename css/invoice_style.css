@@ -1,0 +1,70 @@
+
+/* Container */
+.container {
+    margin-top: 50px;
+}
+
+/* Card styles */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Card header */
+.card-header {
+    background-color: #ff6347; /* Tomato red for pizza shop theme */
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+}
+
+.card-header h1 {
+    font-size: 28px;
+}
+
+.card-header .text-end {
+    text-align: right;
+}
+
+/* Table styles */
+.table {
+    margin-top: 20px;
+}
+
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Text styles */
+h4, h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Total box */
+.total-box {
+    background-color: #fff3e0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+
